@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="75T-rC-UAK">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="235"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="102" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yH-cT-QnM">
+                        <rect key="frame" x="14" y="0.0" width="338" height="159"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lci-Zv-U0o">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="46"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lci-Zv-U0o" firstAttribute="top" secondItem="7yH-cT-QnM" secondAttribute="top" id="JSB-0Y-bJd"/>
+                            <constraint firstAttribute="trailing" secondItem="Lci-Zv-U0o" secondAttribute="trailing" id="f0H-Wy-OBA"/>
+                            <constraint firstAttribute="bottom" secondItem="Lci-Zv-U0o" secondAttribute="bottom" id="rbg-6C-6lA"/>
+                            <constraint firstItem="Lci-Zv-U0o" firstAttribute="leading" secondItem="7yH-cT-QnM" secondAttribute="leading" id="wB8-mF-uN7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSR-dw-Poa">
+                        <rect key="frame" x="33" y="175" width="307" height="41"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                        <color key="textColor" red="0.99560053661616166" green="0.99560053661616166" blue="0.99560053661616166" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lSR-dw-Poa" firstAttribute="top" secondItem="7yH-cT-QnM" secondAttribute="bottom" constant="16" id="3AE-l9-U8s"/>
+                <constraint firstItem="7yH-cT-QnM" firstAttribute="top" secondItem="75T-rC-UAK" secondAttribute="top" id="Glp-30-7YN"/>
+                <constraint firstItem="lSR-dw-Poa" firstAttribute="leading" secondItem="75T-rC-UAK" secondAttribute="leading" constant="33" id="IhX-ob-grr"/>
+                <constraint firstAttribute="trailing" secondItem="7yH-cT-QnM" secondAttribute="trailing" constant="21" id="Nyf-8u-UP8"/>
+                <constraint firstItem="7yH-cT-QnM" firstAttribute="leading" secondItem="75T-rC-UAK" secondAttribute="leading" constant="14" id="W5H-xz-p1m"/>
+                <constraint firstAttribute="bottom" secondItem="lSR-dw-Poa" secondAttribute="bottom" constant="19" id="awB-P5-Dof"/>
+                <constraint firstAttribute="trailing" secondItem="lSR-dw-Poa" secondAttribute="trailing" constant="33" id="jI4-vs-YV0"/>
+            </constraints>
+            <size key="customSize" width="183" height="221"/>
+            <point key="canvasLocation" x="397.5" y="276.5"/>
+        </collectionViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

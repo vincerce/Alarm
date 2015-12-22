@@ -1,0 +1,17 @@
+//
+//  MainPch.pch
+//  AlarmManager
+//
+//  Created by vince chao on 15/5/19.
+//  Copyright (c) 2015年 vince chao. All rights reserved.
+//
+
+#ifndef AlarmManager_MainPch_pch
+#define AlarmManager_MainPch_pch
+
+
+#endif
+#ifdef __OBJC__
+#import "AdapterModel.h"
+#define WEATHER @"http://iphone.mengbaby.com//health/index?dno=1&pcdid=1%@&hcid=1&udid=DAAADB5A-537C-4010-B95D-10C47E8DF556&urid=1061647&ctid=1038&token=KXczZVq-DF5ltNMcQVt8tGMXDwZNbBl5YxNXqXysMP8RdUphBKcOk8dRTGcvrunhIlBvdwJwKnYMCZEKL2A3Sw&lat=0.000000&lng=0.000000&conn=wifi&v=2.3.0&lang=zh-Hans&width=320&height=568&account=DAAADB5A-537C-4010-B95D-10C47E8DF556&dist=5&dosv=8.1&device=iPhone5,3"
+#endif

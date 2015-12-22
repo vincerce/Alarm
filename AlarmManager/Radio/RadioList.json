@@ -1,0 +1,62 @@
+[
+ {
+    "name": "中国之声",
+    "picture": "1",
+    "team-color": "#98012E"
+ },
+ {
+    "name": "CCTV13",
+    "picture": "2",
+    "team-color": "#98012E"
+ },
+ {
+    "name": "华夏之声",
+    "picture": "3",
+    "team-color": "#061642"
+ },
+ {
+    "name": "经济之声",
+    "picture": "4",
+    "team-color": "#98012E"
+ },
+ {
+    "name": "音乐之声",
+    "picture": "5",
+    "team-color": "#225EA8"
+ },
+ {
+    "name": "都市之声",
+    "picture": "6",
+    "team-color": "#C67C03"
+ },
+ {
+    "name": "中文环球",
+    "picture": "7",
+    "team-color": "#D40026"
+ },
+ {
+ "name": "国际在线",
+ "picture": "8",
+ "team-color": "#98012E"
+ },
+ {
+ "name": "环球旅游",
+ "picture": "9",
+ "team-color": "#98012E"
+ },
+ {
+ "name": "环球资讯",
+ "picture": "10",
+ "team-color": "#061642"
+ },
+ {
+ "name": "英语电台",
+ "picture": "11",
+ "team-color": "#98012E"
+ },
+ {
+ "name": "凤凰中文",
+ "picture": "12",
+ "team-color": "#225EA8"
+ }
+ ]
