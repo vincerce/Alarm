@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Alarm
+//
+//  Created by Superbro on 15/12/25.
+//  Copyright © 2015年 vince chao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "AdapterModel.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define WEATHER @"http://iphone.mengbaby.com//health/index?dno=1&pcdid=1%@&hcid=1&udid=DAAADB5A-537C-4010-B95D-10C47E8DF556&urid=1061647&ctid=1038&token=KXczZVq-DF5ltNMcQVt8tGMXDwZNbBl5YxNXqXysMP8RdUphBKcOk8dRTGcvrunhIlBvdwJwKnYMCZEKL2A3Sw&lat=0.000000&lng=0.000000&conn=wifi&v=2.3.0&lang=zh-Hans&width=320&height=568&account=DAAADB5A-537C-4010-B95D-10C47E8DF556&dist=5&dosv=8.1&device=iPhone5,3"
+
+#endif /* PrefixHeader_pch */
