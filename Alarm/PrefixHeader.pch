@@ -11,6 +11,7 @@
 #import "AdapterModel.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-#define WEATHER @"http://iphone.mengbaby.com//health/index?dno=1&pcdid=1%@&hcid=1&udid=DAAADB5A-537C-4010-B95D-10C47E8DF556&urid=1061647&ctid=1038&token=KXczZVq-DF5ltNMcQVt8tGMXDwZNbBl5YxNXqXysMP8RdUphBKcOk8dRTGcvrunhIlBvdwJwKnYMCZEKL2A3Sw&lat=0.000000&lng=0.000000&conn=wifi&v=2.3.0&lang=zh-Hans&width=320&height=568&account=DAAADB5A-537C-4010-B95D-10C47E8DF556&dist=5&dosv=8.1&device=iPhone5,3"
+#define WEATHER @"http://iphone.mengbaby.com//health/index?pcdid=1%@&hcid=5&dno=1&udid=6627AC70-7BBC-43C0-87AA-0DAAAA078B8D&urid=2070537&ctid=1001&token=5QsbYvEWaO1U4ZO6y-IunZTeOfgdLlgV_wakoRlm3L4H9x_dxMTInV-kxpXjiVnL-dWTyZVR6amKrI8MNdVPsA&lat=0.000000&lng=0.000000&conn=wifi&v=3.1.0&lang=zh-Hans-CN&width=320&height=568&account=6627AC70-7BBC-43C0-87AA-0DAAAA078B8D&dist=5&dosv=9.2&device=iPhone6,2"
+
 
 #endif /* PrefixHeader_pch */
