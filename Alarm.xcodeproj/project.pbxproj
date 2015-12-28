@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89D828D21C31175F00694D32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D828D11C31175F00694D32 /* Images.xcassets */; };
 		89E5EB481C2D23EC0031E779 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E5EB471C2D23EC0031E779 /* main.m */; };
 		89E5EB511C2D23EC0031E779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E5EB4F1C2D23EC0031E779 /* Main.storyboard */; };
 		89E5EB531C2D23EC0031E779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89E5EB521C2D23EC0031E779 /* Assets.xcassets */; };
@@ -155,6 +156,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89D828D11C31175F00694D32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89E5EB431C2D23EC0031E779 /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E5EB471C2D23EC0031E779 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89E5EB501C2D23EC0031E779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -415,9 +417,9 @@
 		89E5EB451C2D23EC0031E779 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
-				89E5EB791C2D24460031E779 /* AlarmClock */,
 				89E5EBA31C2D24460031E779 /* AppDelegate.h */,
 				89E5EBA41C2D24460031E779 /* AppDelegate.m */,
+				89E5EB791C2D24460031E779 /* AlarmClock */,
 				89E5EBA51C2D24460031E779 /* Radio */,
 				89E5EBC81C2D24470031E779 /* ThirdParty */,
 				89E5EBEF1C2D24470031E779 /* Weather */,
@@ -425,6 +427,7 @@
 				89E5EB521C2D23EC0031E779 /* Assets.xcassets */,
 				89E5EB541C2D23EC0031E779 /* LaunchScreen.storyboard */,
 				89E5EB571C2D23EC0031E779 /* Info.plist */,
+				89D828D11C31175F00694D32 /* Images.xcassets */,
 				89E5EB461C2D23EC0031E779 /* Supporting Files */,
 			);
 			path = Alarm;
@@ -944,6 +947,7 @@
 				89E5EC131C2D24470031E779 /* TocViewControllerAddClock.xib in Resources */,
 				89E5EC201C2D24470031E779 /* 起床铃声2.caf in Resources */,
 				89E5EC271C2D24470031E779 /* RadioList.json in Resources */,
+				89D828D21C31175F00694D32 /* Images.xcassets in Resources */,
 				89E5EC291C2D24470031E779 /* 1.png in Resources */,
 				89E5EC601C2D24470031E779 /* 风.png in Resources */,
 				89E5EC1B1C2D24470031E779 /* cross@2x.png in Resources */,
@@ -1207,6 +1211,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: peiyan Zheng (LX5X933C46)";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Alarm/PrefixHeader.pch";
@@ -1219,7 +1224,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuehanDevison;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b7f7ce6b-fa0b-4e0d-80cb-09562ca5b8dd";
 			};
 			name = Debug;
 		};
@@ -1227,6 +1232,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: peiyan Zheng (LX5X933C46)";
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Alarm/PrefixHeader.pch";
@@ -1239,7 +1245,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuehanDevison;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b7f7ce6b-fa0b-4e0d-80cb-09562ca5b8dd";
 			};
 			name = Release;
 		};

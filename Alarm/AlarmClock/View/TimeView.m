@@ -35,7 +35,7 @@
             
             
             self.fdTime = [[NSDateFormatter alloc] init];
-            [self.fdTime setDateFormat:@"HH:mm:ss"];
+            [self.fdTime setDateFormat:@"HH:mm"];
             self.fdDate = [[NSDateFormatter alloc] init];
             [self.fdDate setDateFormat:@"yyyy-MM-dd"];
             
@@ -101,7 +101,7 @@
         
         
         self.fdTime = [[NSDateFormatter alloc] init];
-        [self.fdTime setDateFormat:@"HH:mm:ss"];
+        [self.fdTime setDateFormat:@"HH:mm"];
         self.fdDate = [[NSDateFormatter alloc] init];
          [self.fdDate setDateFormat:@"yyyy-MM-dd"];
         
@@ -189,7 +189,7 @@
 
 - (CGPathRef)drawShortBorderLayerPathWithArcCenter
 {
-    return [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH, HEIGHT)
+    return [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH, HEIGHT - 8)
                                               //设置圆心坐标
         radius:HEIGHT-30                       //设置半径
         startAngle:(-M_PI_2)                   //起始角度
@@ -201,7 +201,7 @@
 #pragma mark - 获取计时器的贝塞尔Path
 - (CGPathRef)drawPathWithArcCenter
 {
-    return [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH, HEIGHT) //设置圆心坐标
+    return [UIBezierPath bezierPathWithArcCenter:CGPointMake(WIDTH, HEIGHT - 8) //设置圆心坐标
                                           radius:HEIGHT-30                  //设置半径
                                       startAngle:(-M_PI_2)                  //起始角度
                                         endAngle:(3*M_PI_2)                 //终点角度
