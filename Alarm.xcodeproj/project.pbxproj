@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		89D828D21C31175F00694D32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D828D11C31175F00694D32 /* Images.xcassets */; };
+		89D828DA1C313E5300694D32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D828D91C313E5300694D32 /* ViewController.m */; };
 		89E5EB481C2D23EC0031E779 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E5EB471C2D23EC0031E779 /* main.m */; };
 		89E5EB511C2D23EC0031E779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E5EB4F1C2D23EC0031E779 /* Main.storyboard */; };
 		89E5EB561C2D23EC0031E779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E5EB541C2D23EC0031E779 /* LaunchScreen.storyboard */; };
@@ -156,6 +157,8 @@
 
 /* Begin PBXFileReference section */
 		89D828D11C31175F00694D32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		89D828D81C313E5300694D32 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89D828D91C313E5300694D32 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		89E5EB431C2D23EC0031E779 /* Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E5EB471C2D23EC0031E779 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89E5EB501C2D23EC0031E779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -417,6 +420,8 @@
 			children = (
 				89E5EBA31C2D24460031E779 /* AppDelegate.h */,
 				89E5EBA41C2D24460031E779 /* AppDelegate.m */,
+				89D828D81C313E5300694D32 /* ViewController.h */,
+				89D828D91C313E5300694D32 /* ViewController.m */,
 				89E5EB791C2D24460031E779 /* AlarmClock */,
 				89E5EBA51C2D24460031E779 /* Radio */,
 				89E5EBC81C2D24470031E779 /* ThirdParty */,
@@ -1042,6 +1047,7 @@
 				89E5EC161C2D24470031E779 /* TocViewControllerRepeat.m in Sources */,
 				89E5EC9C1C2D29AA0031E779 /* SDWebImageDownloaderOperation.m in Sources */,
 				89E5ECC01C2D2A060031E779 /* AFURLResponseSerialization.m in Sources */,
+				89D828DA1C313E5300694D32 /* ViewController.m in Sources */,
 				89E5EC221C2D24470031E779 /* AppDelegate.m in Sources */,
 				89E5ECA31C2D29AA0031E779 /* UIImageView+WebCache.m in Sources */,
 				89E5EC521C2D24470031E779 /* UPStackMenu.m in Sources */,
