@@ -128,7 +128,7 @@
 #pragma mark 创建电子表
 - (void)createClockView
 {
-    if (WIDTH == 320) {
+    if (WIDTH < 320) {
          self.clockView = [[TimeView alloc]initWithFrame:CGRectMake(0, 0, 250, 250)];
         self.clockView.center = CGPointMake(WIDTH / 2, 120);
     } else {

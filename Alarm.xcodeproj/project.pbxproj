@@ -395,15 +395,6 @@
 		89E5EB3A1C2D23EC0031E779 = {
 			isa = PBXGroup;
 			children = (
-				89E5ECC81C2D30DA0031E779 /* libz.tbd */,
-				89E5ECC61C2D30CC0031E779 /* libbz2.1.0.tbd */,
-				89E5EC6E1C2D261F0031E779 /* OpenAL.framework */,
-				89E5EC6C1C2D26170031E779 /* OpenGLES.framework */,
-				89E5EC6A1C2D26030031E779 /* AudioToolbox.framework */,
-				89E5EC681C2D25F70031E779 /* Security.framework */,
-				89E5EC661C2D25EB0031E779 /* MobileCoreServices.framework */,
-				89E5EC641C2D25DA0031E779 /* CFNetwork.framework */,
-				89E5EC621C2D25C80031E779 /* SystemConfiguration.framework */,
 				89E5EB451C2D23EC0031E779 /* Alarm */,
 				89E5EB5F1C2D23EC0031E779 /* AlarmTests */,
 				89E5EB6A1C2D23EC0031E779 /* AlarmUITests */,
@@ -442,6 +433,15 @@
 		89E5EB461C2D23EC0031E779 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89E5EC621C2D25C80031E779 /* SystemConfiguration.framework */,
+				89E5EC641C2D25DA0031E779 /* CFNetwork.framework */,
+				89E5EC661C2D25EB0031E779 /* MobileCoreServices.framework */,
+				89E5EC681C2D25F70031E779 /* Security.framework */,
+				89E5EC6A1C2D26030031E779 /* AudioToolbox.framework */,
+				89E5EC6C1C2D26170031E779 /* OpenGLES.framework */,
+				89E5EC6E1C2D261F0031E779 /* OpenAL.framework */,
+				89E5ECC61C2D30CC0031E779 /* libbz2.1.0.tbd */,
+				89E5ECC81C2D30DA0031E779 /* libz.tbd */,
 				89E5EB471C2D23EC0031E779 /* main.m */,
 				89E5EC611C2D24910031E779 /* PrefixHeader.pch */,
 			);
@@ -1310,6 +1310,7 @@
 				89E5EB721C2D23EC0031E779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89E5EB731C2D23EC0031E779 /* Build configuration list for PBXNativeTarget "AlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -1318,6 +1319,7 @@
 				89E5EB751C2D23EC0031E779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89E5EB761C2D23EC0031E779 /* Build configuration list for PBXNativeTarget "AlarmUITests" */ = {
 			isa = XCConfigurationList;
@@ -1326,6 +1328,7 @@
 				89E5EB781C2D23EC0031E779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
