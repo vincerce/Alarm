@@ -22,16 +22,16 @@
     [self.window makeKeyAndVisible];
     float sysVersion=[[UIDevice currentDevice]systemVersion].floatValue;
     if (sysVersion>=8.0) {
-//        UIUserNotificationType type=UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound;
-//        UIUserNotificationSettings *setting=[UIUserNotificationSettings settingsForTypes:type categories:nil];
+        //        UIUserNotificationType type=UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound;
+        //        UIUserNotificationSettings *setting=[UIUserNotificationSettings settingsForTypes:type categories:nil];
         UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge |UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
-
+        
         [[UIApplication sharedApplication]registerUserNotificationSettings:setting];
     }
-
+    
     MainViewController *main = [[MainViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:main];
-     nav.navigationBar.translucent = NO;
+    nav.navigationBar.translucent = NO;
     nav.navigationBar.barTintColor = [UIColor colorWithRed:30/255.0 green:30/255.0 blue:30/255.0 alpha:0.8];
     self.window.rootViewController = nav;
     
@@ -39,16 +39,16 @@
     return YES;
 }
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification*)notification{
-     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     NSString *str = [NSString string];
-
+    
     str = [[NSUserDefaults standardUserDefaults] objectForKey:@"warningTone"];
     if (str == nil) {
         notification.soundName = [NSString stringWithFormat:@"%@.caf", @"起床铃声1"];
     } else {
         notification.soundName = [NSString stringWithFormat:@"%@.caf", str];
     }
-
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"晨起助手提示有您的提醒" message:notification.alertBody delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
     
     [alert show];
