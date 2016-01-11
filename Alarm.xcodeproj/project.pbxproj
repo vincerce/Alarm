@@ -172,8 +172,8 @@
 		89D8294C1C32292000694D32 /* AlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D829501C32292000694D32 /* AlarmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmUITests.m; sourceTree = "<group>"; };
 		89D829521C32292000694D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89D829601C32294A00694D32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		89D829611C32294A00694D32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		89D829601C32294A00694D32 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = AlarmClock/Controller/MainViewController.h; sourceTree = "<group>"; };
+		89D829611C32294A00694D32 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = AlarmClock/Controller/MainViewController.m; sourceTree = "<group>"; };
 		89D829631C32294A00694D32 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		89D829641C32294A00694D32 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		89D829651C32294A00694D32 /* Our.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Our.png; sourceTree = "<group>"; };
@@ -426,6 +426,8 @@
 				89D8292F1C32291F00694D32 /* AppDelegate.m */,
 				89D829311C32292000694D32 /* ViewController.h */,
 				89D829321C32292000694D32 /* ViewController.m */,
+				89D829601C32294A00694D32 /* MainViewController.h */,
+				89D829611C32294A00694D32 /* MainViewController.m */,
 				89D829341C32292000694D32 /* Main.storyboard */,
 				89D829371C32292000694D32 /* Assets.xcassets */,
 				89D829391C32292000694D32 /* LaunchScreen.storyboard */,
@@ -475,9 +477,6 @@
 			isa = PBXGroup;
 			children = (
 				89D8295F1C32294A00694D32 /* Controller */,
-				89D829621C32294A00694D32 /* Mine */,
-				89D829681C32294A00694D32 /* signInOutNotify */,
-				89D8297C1C32294A00694D32 /* View */,
 			);
 			path = AlarmClock;
 			sourceTree = "<group>";
@@ -485,8 +484,9 @@
 		89D8295F1C32294A00694D32 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				89D829601C32294A00694D32 /* MainViewController.h */,
-				89D829611C32294A00694D32 /* MainViewController.m */,
+				89D8297C1C32294A00694D32 /* View */,
+				89D829681C32294A00694D32 /* signInOutNotify */,
+				89D829621C32294A00694D32 /* Mine */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -500,7 +500,8 @@
 				89D829661C32294A00694D32 /* OurController.h */,
 				89D829671C32294A00694D32 /* OurController.m */,
 			);
-			path = Mine;
+			name = Mine;
+			path = ../Mine;
 			sourceTree = "<group>";
 		};
 		89D829681C32294A00694D32 /* signInOutNotify */ = {
@@ -518,7 +519,8 @@
 				89D8297A1C32294A00694D32 /* TocViewControllerRepeat.m */,
 				89D8297B1C32294A00694D32 /* TocViewControllerRepeat.xib */,
 			);
-			path = signInOutNotify;
+			name = signInOutNotify;
+			path = ../signInOutNotify;
 			sourceTree = "<group>";
 		};
 		89D829691C32294A00694D32 /* cell */ = {
@@ -558,7 +560,8 @@
 				89D829861C32294A00694D32 /* 起床铃声2.caf */,
 				89D829871C32294A00694D32 /* 起床铃声3.caf */,
 			);
-			path = View;
+			name = View;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		89D829881C32294A00694D32 /* Radio */ = {
@@ -1217,7 +1220,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: peiyan Zheng (LX5X933C46)";
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/wangchao/Desktop/Alarm/Alarm/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Alarm/PrefixHeader.pch";
 				INFOPLIST_FILE = Alarm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1238,7 +1241,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: peiyan Zheng (LX5X933C46)";
 				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = /Users/wangchao/Desktop/Alarm/Alarm/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Alarm/PrefixHeader.pch";
 				INFOPLIST_FILE = Alarm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1319,6 +1322,7 @@
 				89D829571C32292000694D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89D829581C32292000694D32 /* Build configuration list for PBXNativeTarget "AlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -1327,6 +1331,7 @@
 				89D8295A1C32292000694D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89D8295B1C32292000694D32 /* Build configuration list for PBXNativeTarget "AlarmUITests" */ = {
 			isa = XCConfigurationList;
@@ -1335,6 +1340,7 @@
 				89D8295D1C32292000694D32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
